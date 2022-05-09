@@ -47,3 +47,21 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+.forMe {
+  transition: all 0.11s linear;
+  cursor: pointer;
+}
+.forMe:hover {
+  transform: scale(1.1);
+  color: #4979ff;
+
+}
+.forMeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.forMeContainer > * {
+  margin: 10px 0;
+}

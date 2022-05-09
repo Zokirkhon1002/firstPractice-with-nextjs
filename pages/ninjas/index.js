@@ -20,6 +20,14 @@ const Ninjas = ({ ninjas }) => {
       </Head>
       <div>
         <h1>All Ninjas</h1>
+        <Link href="/ninjas/khan">
+          <a
+            className={styles.single2}
+            style={{ borderRight: "8px solid #4979ff" }}
+          >
+            <h3> Zokirkhon Kotibkhonov </h3>
+          </a>
+        </Link>
         {ninjas?.map((ninja) => (
           <Link href={`/ninjas/${ninja.id}`} key={ninja.id}>
             <a className={styles.single2}>

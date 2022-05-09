@@ -48,12 +48,11 @@ const Details = ({ ninja }) => {
       {isLoading ? (
         <NewLoader />
       ) : (
-        <div>
-          <h1>Details</h1>
+        <div className="forMeContainer">
           <h1>{ninja.name}</h1>
-          <p>{ninja.email}</p>
-          <p>{ninja.website}</p>
-          <p>{ninja.address.city}</p>
+          <p className="forMe" >{ninja.email}</p>
+          <p className="forMe" >{ninja.website}</p>
+          <p className="forMe" >{ninja.address.city}</p>
         </div>
       )}
     </>

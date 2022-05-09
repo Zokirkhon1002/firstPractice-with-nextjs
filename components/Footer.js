@@ -1,7 +1,7 @@
 const Footer = () => {
     return ( 
     <footer>
-        Copyright {new Date().getFullYear()}-year Ninja List 
+        Copyright {new Date().getFullYear()}-year Ninja List with Zokirkhon
     </footer> );
 }
  
