@@ -3,5 +3,5 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 
-Open [https://first-practice-with-nextjs.vercel.app](Demo-Live) with your browser to see the result.
+Open [Demo-Live](https://first-practice-with-nextjs.vercel.app) with your browser to see the result.
 
