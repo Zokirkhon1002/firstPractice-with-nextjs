@@ -1,0 +1,25 @@
+.single {
+  text-decoration: none !important;
+  color: #fff !important;
+  transition: all 0.12s linear !important;
+  text-decoration: none !important;
+  padding: 10px 16px !important;
+  border-radius: 10px !important;
+  background: #4675f7;
+}
+.single:hover {
+  background: #2459eb;
+
+}
+.single2 {
+  padding: 2px 16px;
+  background: #fff;
+  display: block;
+  margin: 20px 10px;
+  border-left: 8px solid #fff;
+  transition: all 0.12s linear !important;
+  cursor: pointer;
+}
+.single2:hover {
+  border-left: 8px solid #4979ff;
+}
