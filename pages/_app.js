@@ -1,10 +1,11 @@
-/* eslint-disable react/no-unknown-property */
+import Layout from "../components/Layout";
+import "../styles/globals.css";
 import { useEffect } from "react";
 import Script from "next/script";
 import { useRouter } from "next/router";
 import * as gtag from "../lib/gtag";
 
-const MyApp = ({ Component, pageProps }) => {
+function MyApp({ Component, pageProps }) {
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -20,7 +21,6 @@ const MyApp = ({ Component, pageProps }) => {
 
   return (
     <>
-      {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5131083334106159"
@@ -44,9 +44,12 @@ const MyApp = ({ Component, pageProps }) => {
           `,
         }}
       />
-      <Component {...pageProps} />
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
-};
+}
 
 export default MyApp;
